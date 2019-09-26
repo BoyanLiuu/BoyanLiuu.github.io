@@ -144,6 +144,4 @@ document.querySelector("#cta").addEventListener("click", function() {
 });
 
 
-document.querySelector(".close-btn").addEventListener("click", function() {
-  document.querySelector(".expand").classList.remove("show-expand");
-});
+
