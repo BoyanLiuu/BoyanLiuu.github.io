@@ -2,6 +2,7 @@
 
 var data = [
   {
+    id: "",
     url: "https://boyanliuu.github.io/movie-websit/",
     gitHubUrl: "https://github.com/BoyanLiuu/movie-websit",
     img: "img/img1.png",
@@ -10,6 +11,7 @@ var data = [
       "Browse your favorite movies, actors and watch trailers. See what's playing in theaters right now. Discover upcoming, trending, and top-rated titles."
   },
   {
+    id: "",
     url: "https://boyanliuu.github.io/Pig-game/",
     gitHubUrl: "https://github.com/BoyanLiuu/Pig-game",
     img: "img/img2.png",
@@ -18,8 +20,9 @@ var data = [
       "An simple Pig name game build by vanilla javascript html and css"
   },
   {
+    id: `id = "tour"`,
     url: "",
-    gitHubUrl: "",
+    gitHubUrl: "https://github.com/BoyanLiuu/Go-Tour-Website",
     img: "img/go-tour.png",
     title: "Natours",
     desc:
@@ -28,7 +31,7 @@ var data = [
 ];
 
 var flexGrid = document.querySelector(".flex-grid");
-
+console.log()
 data.forEach(function(el) {
   return (flexGrid.innerHTML +=
     '<article class="card">\n<div class="card__thumbnail">\n  <a class="card__img-container" href=' +
@@ -39,14 +42,20 @@ data.forEach(function(el) {
     el.title +
     ' class="card__img">\n  </a>\n</div>\n<div class="card__description">\n  <h3 class="card__heading">\n    <a href=' +
     el.url +
-    ' target="_blank" class="card__link">' +
+    ' target="_blank" class="card__link"'  +'>'+
     el.title +
     '</a>\n  </h3>\n  <p class="card__text">' +
     el.desc +
     "</p>\n  <a href=" +
     el.gitHubUrl +
-    ' target="_blank" class="card__github">\n    GitHub\n    <i class="fab fa-github"></i>\n  </a>\n</div>\n</article>');
+    ' target="_blank"  class="card__github">\n    GitHub\n    <i class="fab fa-github"></i>\n  </a>\n</div>\n</article>');
 });
+ var x = document.querySelectorAll('.card__link');
+ var temp = Array.from(x);
+ temp[2].setAttribute("href", "#lightbox");
+ temp[2].setAttribute("data-toggle", "modal");
+
+// Specify last element of 
 
 // Browser support
 function currentYPosition() {

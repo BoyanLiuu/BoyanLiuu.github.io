@@ -473,3 +473,13 @@ body {
 
 .center-text {
   text-align: center !important; }
+
+.modal.and.carousel {
+    position: fixed;
+  }
+.carousel-caption{
+  color:black;
+  bottom:-7%;
+
+
+}
