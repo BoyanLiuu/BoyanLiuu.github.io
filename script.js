@@ -8,17 +8,18 @@ var data = [
     img: "img/img1.png",
     title: "Movie Website",
     desc:
-      "Browse your favorite movies, actors and watch trailers. See what's playing in theaters right now. Discover upcoming, trending, and top-rated titles."
+      "Browse your favorite movies, actors and watch trailers. See what's playing in theaters right now. Discover upcoming, trending, and top-rated titles.",
   },
   {
     id: "",
-    url: "https://boyanliuu.github.io/Pig-game/",
-    gitHubUrl: "https://github.com/BoyanLiuu/Pig-game",
-    img: "img/img2.png",
-    title: "Pig Name game",
+    url: "https://arcade-chat.herokuapp.com/",
+    gitHubUrl: "https://github.com/BoyanLiuu/chatting-room",
+    img: "img/arcade-chat.png",
+    title: "Arcade chat room",
     desc:
-      "An simple Pig name game build by vanilla javascript html and css"
+      "Create rooms and talk with other friends. It implemented with Node.js, Express, Mongoose, Socket.io, and Passport for designing a real- time chat application.",
   },
+
   {
     id: `id = "tour"`,
     url: "",
@@ -26,13 +27,38 @@ var data = [
     img: "img/go-tour.png",
     title: "Natours",
     desc:
-      "An E commerce  tour website that users can login and buy tours review tours. Build by node.js, express.js and MongoDB"
-  }
+      "An E commerce  tour website that users can login and buy tours review tours. Build by node.js, express.js and MongoDB",
+  },
+  {
+    id: "",
+    url: "https://simple-clothing-app.herokuapp.com/",
+    gitHubUrl: "https://github.com/BoyanLiuu/react-Ecommerce-Website",
+    img: "img/clothesApp.png",
+    title: "Simpel Clothing App",
+    desc:
+      "A Clothing website that users can login and buy clothes. Build by react.js,redux firebase ",
+  },
+  {
+    id: "",
+    url: "https://hangman-react-js.herokuapp.com/",
+    gitHubUrl: "https://github.com/BoyanLiuu/hangman-game",
+    img: "img/hangman.png",
+    title: "ReactJS Hangman Game",
+    desc: "ReactJS Hangman Game Find a Programming Language",
+  },
+  {
+    id: "",
+    url: "https://boyanliuu.github.io/Pig-game/",
+    gitHubUrl: "https://github.com/BoyanLiuu/Pig-game",
+    img: "img/img2.png",
+    title: "Pig Name game",
+    desc: "An simple Pig name game build by vanilla javascript html and css",
+  },
 ];
 
 var flexGrid = document.querySelector(".flex-grid");
-console.log()
-data.forEach(function(el) {
+console.log();
+data.forEach(function (el) {
   return (flexGrid.innerHTML +=
     '<article class="card">\n<div class="card__thumbnail">\n  <a class="card__img-container" href=' +
     el.url +
@@ -42,7 +68,8 @@ data.forEach(function(el) {
     el.title +
     ' class="card__img">\n  </a>\n</div>\n<div class="card__description">\n  <h3 class="card__heading">\n    <a href=' +
     el.url +
-    ' target="_blank" class="card__link"'  +'>'+
+    ' target="_blank" class="card__link"' +
+    ">" +
     el.title +
     '</a>\n  </h3>\n  <p class="card__text">' +
     el.desc +
@@ -50,12 +77,12 @@ data.forEach(function(el) {
     el.gitHubUrl +
     ' target="_blank"  class="card__github">\n    GitHub\n    <i class="fab fa-github"></i>\n  </a>\n</div>\n</article>');
 });
- var x = document.querySelectorAll('.card__link');
- var temp = Array.from(x);
- temp[2].setAttribute("href", "#lightbox");
- temp[2].setAttribute("data-toggle", "modal");
+var x = document.querySelectorAll(".card__link");
+var temp = Array.from(x);
+temp[2].setAttribute("href", "#lightbox");
+temp[2].setAttribute("data-toggle", "modal");
 
-// Specify last element of 
+// Specify last element of
 
 // Browser support
 function currentYPosition() {
@@ -120,7 +147,7 @@ function smoothScroll(eID) {
 }
 
 // Triggering scroll function
-document.querySelector(".user-nav").addEventListener("click", function(event) {
+document.querySelector(".user-nav").addEventListener("click", function (event) {
   var target = event.target;
   var anchorID = target.getAttribute("href");
 
@@ -133,15 +160,12 @@ document.querySelector(".user-nav").addEventListener("click", function(event) {
 
 document
   .querySelector(".footer-nav")
-  .addEventListener("click", function(event) {
+  .addEventListener("click", function (event) {
     var target = event.target;
     var anchorID = target.getAttribute("href");
     smoothScroll(anchorID);
   });
 
-document.querySelector("#cta").addEventListener("click", function() {
+document.querySelector("#cta").addEventListener("click", function () {
   smoothScroll("#portfolio");
 });
-
-
-

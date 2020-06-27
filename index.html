@@ -1,249 +1,198 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="format-detection" content="telephone=no" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Nunito:400,600,700"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
+      integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" type="image/png" href="img/logo.jpg" />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <meta name="format-detection" content="telephone=no" />
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-  <link href="https://fonts.googleapis.com/css?family=Nunito:400,600,700" rel="stylesheet" />
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
-    integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous" />
-  <link rel="stylesheet" href="style.css" />
-  <link rel="shortcut icon" type="image/png" href="img/logo.jpg" />
+    <title>Boyan Liu - Software Developer</title>
+  </head>
 
-  <title>Boyan Liu - Software Developer</title>
-</head>
-
-<body>
-  <!-- HEADER SECTION -->
-  <header id="home" class="header">
-    <div class="header__wrapper container__header">
-      <div class="logo">
-        <img src="img/logo.jpg" alt="Logo" class="logo__img" />
-      </div>
-      <nav class="user-nav">
-        <a href="#about" class="user-nav__link">
-          <i class="far fa-smile"></i> <span>About</span>
-        </a>
-        <a href="#portfolio" class="user-nav__link">
-          <i class="far fa-folder-open"></i> <span>Porfolio</span>
-        </a>
-        <a href="#resources" class="user-nav__link">
-          <i class="far fa-clone"></i> <span>Resources</span>
-        </a>
-      </nav>
-    </div>
-  </header>
-  <main class="main-content">
-    <!-- Hero Section -->
-
-    <section class="hero">
-      <div class="hero__layer"></div>
-      <div class="hero__content">
-        <h1 class="hero__heading">
-          Hello! I'm <span class="hero__heading--name">Boyan Liu.</span><br />I'm a Software developer.
-        </h1>
-        <a href="#portfolio" class="btn" id="cta">Check my work</a>
-      </div>
-    </section>
-
-    <!-- About Section -->
-
-    <header class="section-header">
-      <h1 class="section-header__heading">About me</h1>
-      <p class="section-header__paragraph">
-        Always excited to learn, design and build new things.
-      </p>
-    </header>
-    <section id="about" class="container">
-      <div class="profile">
-
-        <div class="profile__description">
-          <h3 class="heading-terciary">Who am I?</h3>
-          <p class="paragraph">
-            I am a Senior in University of Maryland major in CS.
-            I am always looking for an opportunity to code and learn new things.In my spare time,
-            I'm usually building things and searching for new skills to learn. I strive to solve solutions by attacking
-            the problem at its core. I enjoy a nice coding challeng because I am always learning new things.
-            And I also love the ability to breeze through problems which I've already found prior solution to.
-          </p>
+  <body>
+    <!-- HEADER SECTION -->
+    <header id="home" class="header">
+      <div class="header__wrapper container__header">
+        <div class="logo">
+          <img src="img/logo.jpg" alt="Logo" class="logo__img" />
         </div>
-
-        <div class="skills">
-          <span>&bull; JAVA</span>
-          <span>&bull; Python</span>
-          <span>&bull; HTML</span>
-          <span>&bull; CSS</span>
-          <span>&bull; JavaScript</span>
-          <span>&bull; jQuery</span>
-          <span>&bull; Node.js</span>
-          <span>&bull; Express.js</span>
-          <span>&bull; MongoDB</span>
-          <span>&bull; NPM</span>
-          <span>&bull; Git</span>
-          <span>&bull; GitHub</span>
-        </div>
-      </div>
-    </section>
-
-    <!-- Portfolio Section -->
-
-    <header class="section-header">
-      <h1 class="section-header__heading">Portfolio</h1>
-      <p class="section-header__paragraph">My development projects.</p>
-    </header>
-    <section id="portfolio" class="container">
-      <div class="flex-grid"></div>
-    </section>
-
-    <div class="container">
-      <div class="modal fade and carousel slide " id="lightbox" data-interval="false">
-        <div class="modal-dialog modal-lg">
-          <div class="modal-content">
-            <div class="modal-body">
-              <div class="carousel-inner">
-                <div class="item active">
-                  <img src="./img/booking.gif" alt="First slide">
-                  <div class="carousel-caption">
-                    <p>Booking functionality</p>
-                  </div>
-                </div>
-                <div class="item">
-                  <img src="./img/signup.gif" alt="Second slide">
-                  <div class="carousel-caption">
-                    <p>sign up functionality</p>
-                  </div>
-                </div>
-                <div class="item">
-                  <img src="./img/login.gif" alt="Third slide">
-                  <div class="carousel-caption">
-                    <p>login functionality</p>
-                  </div>
-                </div>
-
-              </div><!-- /.carousel-inner -->
-              <a class="left carousel-control" href="#lightbox" role="button" data-slide="prev">
-                <span class="glyphicon glyphicon-chevron-left"></span>
-              </a>
-              <a class="right carousel-control" href="#lightbox" role="button" data-slide="next">
-                <span class="glyphicon glyphicon-chevron-right"></span>
-              </a>
-            </div><!-- /.modal-body -->
-          </div><!-- /.modal-content -->
-        </div><!-- /.modal-dialog -->
-      </div><!-- /.modal -->
-
-    </div>
-
-
-
-    <!-- Resources Section -->
-
-    <header class="section-header">
-      <h1 class="section-header__heading">Resources</h1>
-      <p class="section-header__paragraph">
-        Resources I use for my development work.
-      </p>
-    </header>
-    <section id="resources" class="container">
-      <div class="flex-grid margin-bottom-large">
-        <!-- Reference box -->
-        <article class="reference">
-          <img src="img/mdn.png" alt="mdn logo" class="reference__logo" />
-          <h3 class="reference__heading">
-            <a href="https://developer.mozilla.org/en-US/" class="reference__link" target="_blank">MDN Reference</a>
-          </h3>
-          <p class="paragraph">
-            One of the best resources for documentation, tutorials and
-            developer tools available.
-          </p>
-        </article>
-        <!-- Reference box -->
-        <article class="reference">
-          <img src="img/csstricks.jpeg" alt="csstricks logo" class="reference__logo" />
-          <h3 class="reference__heading">
-            <a href="https://css-tricks.com/snippets/html/glyphs/" class="reference__link" target="_blank">HTML Entity
-              Reference by CSS-Tricks</a>
-          </h3>
-          <p class="paragraph">
-            Great reference to find HTML entity name, numeric code, hex code
-            and ISO code.
-          </p>
-        </article>
-        <!-- Reference box -->
-        <article class="reference">
-          <img src="img/hubspot.png" alt="hubspot logo" class="reference__logo" />
-          <h3 class="reference__heading">
-            <a href="http://youmightnotneedjquery.com/" class="reference__link" target="_blank">Javascript DOM
-              Manipulation</a>
-          </h3>
-          <p class="paragraph">
-            An useful DOM manipulation reference when using only vanilla JS.
-          </p>
-        </article>
-      </div>
-      <div class="flex-grid margin-bottom-large">
-        <!-- Reference box -->
-        <article class="reference">
-          <img src="img/googlefonts.png" alt="googlefonts logo" class="reference__logo" />
-          <h3 class="reference__heading">
-            <a href="https://fonts.google.com/" class="reference__link" target="_blank">Google Fonts</a>
-          </h3>
-          <p class="paragraph">
-            The best library with hundreds of free web fonts ready to be used.
-          </p>
-        </article>
-        <!-- Reference box -->
-        <article class="reference">
-          <img src="img/fcc.jpeg" alt="freecodecamp logo" class="reference__logo" />
-          <h3 class="reference__heading">
-            <a href="https://www.freecodecamp.org/" class="reference__link" target="_blank">FreeCodeCamp</a>
-          </h3>
-          <p class="paragraph">
-            A well known plataform to learn and share your passion with fellow
-            coders.
-          </p>
-        </article>
-        <!-- Reference box -->
-        <article class="reference">
-          <img src="img/stackoverflow.jpg" alt="stackoverflow logo" class="reference__logo" />
-          <h3 class="reference__heading">
-            <a href="https://stackoverflow.com/" class="reference__link" target="_blank">Stack Overflow</a>
-          </h3>
-          <p class="paragraph">
-            A great community to ask and find questions related to web
-            development.
-          </p>
-        </article>
-      </div>
-    </section>
-  </main>
-  <!-- FOOTER SECTION -->
-  <footer class="footer">
-    <div class="container">
-      <div class="center-text">
-        <span class="copyright">&copy; 2019
-          <span class="copyright__name">Boyan Liu</span></span>
-        <p class="footer-nav">
-          <a href="#home" class="footer-nav__link">Home</a> &nbsp;|&nbsp;
-          <a href="#about" class="footer-nav__link">About</a> &nbsp;|&nbsp;
-          <a href="#portfolio" class="footer-nav__link">Portfolio</a>
-          &nbsp;|&nbsp;
-          <a href="#resources" class="footer-nav__link">Resources</a>
-        </p>
-        <div class="social-media">
-          <a href="https://github.com/BoyanLiuu" target="_blank" class="social-media__icon">
-            <i class="fab fa-github"></i>
+        <nav class="user-nav">
+          <a href="#about" class="user-nav__link">
+            <i class="far fa-smile"></i> <span>About</span>
           </a>
+          <a href="#portfolio" class="user-nav__link">
+            <i class="far fa-folder-open"></i> <span>Porfolio</span>
+          </a>
+          <a href="#resources" class="user-nav__link">
+            <i class="far fa-clone"></i> <span>Resources</span>
+          </a>
+        </nav>
+      </div>
+    </header>
+    <main class="main-content">
+      <!-- Hero Section -->
+
+      <section class="hero">
+        <div class="hero__layer"></div>
+        <div class="hero__content">
+          <h1 class="hero__heading">
+            Hello! I'm <span class="hero__heading--name">Boyan Liu.</span>
+          </h1>
+          <a href="#portfolio" class="btn" id="cta">Check my work</a>
+        </div>
+      </section>
+
+      <!-- About Section -->
+
+      <header class="section-header">
+        <h1 class="section-header__heading">About me</h1>
+        <p class="section-header__paragraph">
+          Always excited to learn, design and build new things.
+        </p>
+      </header>
+      <section id="about" class="container">
+        <div class="profile">
+          <div class="profile__description">
+            <h3 class="heading-terciary">Who am I?</h3>
+            <p class="paragraph">
+              I am a Senior in University of Maryland major in CS. I am always
+              looking for an opportunity to code and learn new things.In my
+              spare time, I'm usually building things and searching for new
+              skills to learn. I strive to solve solutions by attacking the
+              problem at its core. I enjoy a nice coding challeng because I am
+              always learning new things. And I also love the ability to breeze
+              through problems which I've already found prior solution to.
+            </p>
+          </div>
+
+          <div class="skills">
+            <span>&bull; JAVA</span>
+            <span>&bull; JavaScript</span>
+            <span>&bull; React.js</span>
+            <span>&bull; Python</span>
+            <span>&bull; HTML</span>
+            <span>&bull; CSS</span>
+            <span>&bull; jQuery</span>
+            <span>&bull; Node.js</span>
+            <span>&bull; Express.js</span>
+            <span>&bull; MongoDB</span>
+            <span>&bull; Git</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- Portfolio Section -->
+
+      <header class="section-header">
+        <h1 class="section-header__heading">Portfolio</h1>
+        <p class="section-header__paragraph">My development projects.</p>
+      </header>
+      <section id="portfolio" class="container">
+        <div class="flex-grid"></div>
+      </section>
+
+      <div class="container">
+        <div
+          class="modal fade and carousel slide"
+          id="lightbox"
+          data-interval="false"
+        >
+          <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+              <div class="modal-body">
+                <div class="carousel-inner">
+                  <div class="item active">
+                    <img src="./img/booking.gif" alt="First slide" />
+                    <div class="carousel-caption">
+                      <p>Booking functionality</p>
+                    </div>
+                  </div>
+                  <div class="item">
+                    <img src="./img/signup.gif" alt="Second slide" />
+                    <div class="carousel-caption">
+                      <p>sign up functionality</p>
+                    </div>
+                  </div>
+                  <div class="item">
+                    <img src="./img/login.gif" alt="Third slide" />
+                    <div class="carousel-caption">
+                      <p>login functionality</p>
+                    </div>
+                  </div>
+                </div>
+                <!-- /.carousel-inner -->
+                <a
+                  class="left carousel-control"
+                  href="#lightbox"
+                  role="button"
+                  data-slide="prev"
+                >
+                  <span class="glyphicon glyphicon-chevron-left"></span>
+                </a>
+                <a
+                  class="right carousel-control"
+                  href="#lightbox"
+                  role="button"
+                  data-slide="next"
+                >
+                  <span class="glyphicon glyphicon-chevron-right"></span>
+                </a>
+              </div>
+              <!-- /.modal-body -->
+            </div>
+            <!-- /.modal-content -->
+          </div>
+          <!-- /.modal-dialog -->
+        </div>
+        <!-- /.modal -->
+      </div>
+
+      <!-- Resources Section -->
+    </main>
+    <!-- FOOTER SECTION -->
+    <footer class="footer">
+      <div class="container">
+        <div class="center-text">
+          <span class="copyright"
+            >&copy; 2019 <span class="copyright__name">Boyan Liu</span></span
+          >
+          <p class="footer-nav">
+            <a href="#home" class="footer-nav__link">Home</a> &nbsp;|&nbsp;
+            <a href="#about" class="footer-nav__link">About</a> &nbsp;|&nbsp;
+            <a href="#portfolio" class="footer-nav__link">Portfolio</a>
+            &nbsp;|&nbsp;
+            <a href="#resources" class="footer-nav__link">Resources</a>
+          </p>
+          <div class="social-media">
+            <a
+              href="https://github.com/BoyanLiuu"
+              target="_blank"
+              class="social-media__icon"
+            >
+              <i class="fab fa-github"></i>
+            </a>
+          </div>
         </div>
       </div>
-    </div>
-  </footer>
-  <script src="script.js"></script>
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
-  <script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js'></script>
-</body>
-
+    </footer>
+    <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+  </body>
 </html>
